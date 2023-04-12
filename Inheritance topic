@@ -1,0 +1,10 @@
+Parent - child - feature
+child class inherits the features of parent class
+parent/base class contains only its own features
+child/derived class contains both its own features and inherited parent features
+IS-A Relationship = dog/sub class is a animal/main class  
+extends keyword increases more functionality
+3 types of inheritance - single, multilevel, hierarchical
+single inheritance - only one parent one child
+multilevel inheritance one parent - one chilld/parent2- another child
+hierarchical inheritance - one parent - two childs or more than one child
