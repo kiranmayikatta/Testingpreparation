@@ -1,0 +1,26 @@
+*Feature Files - src/test/resources - The Testcase objective or Behaviour is defined in a feature file.
+Feature file contains set of steps to achieve particular test objective.
+every step can be developed by using any of the keywords as Given, When, Then, And, But - Gherkin language
+scenario and sceanario outline steps are defined in feature file.
+*Scenario - steps can be executed only once for a particular predefined input values.
+*Scenario Outline - Scenario outline steps can be executed multiple times for each step of input data as defined in the examples section.
+Examples:
+|ID|
+|1|
+|2|
+*Back Ground - It contains common reusuable steps which can be executed first for every scenario.
+*Step Definition.java File - src/test/java - for every keyword in featurefile , corresponding methods will be implemented under this file.
+*Test Runner.java File - runner package - @Cucumber Options - To execute scenarios
+for the latest cucumber version - junit.platform.properities instead of runner class
+@ cucumber options-------------------purpose-----------------------------------Default Value
+dryRun-------------------------true: Checks if all the steps have the stepdefinition-----false
+features--------------set: The paths of the feature files------------{}
+glue--------------------set: The paths of the step defintion files --{}
+tags----------instruct:which tags in the feature files should be executed-------------{}
+monochrome----true: Display the console output in the much readable way-------false
+format------ set: what all report formaters to use--------------------------------false
+strict----------true: will fail execution if there are undefined or pending steps----------false
+*Parameterization - Data Tables, Scenario outline - To achieve parameterization we can use Data Tables concept.
+In a feature file for a particular step, we can write parameters and corresponding input values.
+To get those input values in stepdef.java file we have to create data table object at corresponding method level. io.cucumber.datatabe
+*Hooks - a common snippet of code which is used globally before and after scenario.
